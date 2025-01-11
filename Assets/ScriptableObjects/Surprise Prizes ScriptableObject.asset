@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 09db90398939dd64f98eeb0c926733f9, type: 3}
+  m_Name: Surprise Prizes ScriptableObject
+  m_EditorClassIdentifier: 
+  surprisePrizesSprites:
+  - {fileID: 21300000, guid: d67690360f59ede4c862c3090733c48b, type: 3}
+  - {fileID: 21300000, guid: 33a6b884d4741f649a85fd1087e60763, type: 3}
+  - {fileID: 21300000, guid: 85f3396f7e5422c4bb3103b022db6246, type: 3}
+  - {fileID: 21300000, guid: fe6b43a51c548f649908156010d55221, type: 3}
+  - {fileID: 21300000, guid: 062a35aa9c258a14491e66b08b5109c7, type: 3}
+  - {fileID: 21300000, guid: 5269701df5e374b4fb78a4b9944a15e9, type: 3}
+  - {fileID: 21300000, guid: 4bd730ec551677a4c8d24ff4d57f6b1a, type: 3}
+  - {fileID: 21300000, guid: a3c219ccf5d93df4c878f3dd952f651f, type: 3}
+  - {fileID: 21300000, guid: 5df9e42a702cf794e94460e7eef7c588, type: 3}
+  - {fileID: 21300000, guid: de5b732bac3a6764491d4a720ad6a28a, type: 3}
+  - {fileID: 21300000, guid: 1052d4106bea53e4583681906e9dd35e, type: 3}
+  - {fileID: 21300000, guid: 9284adeca34470a4c9bc2f835b95ecc7, type: 3}
+  - {fileID: 21300000, guid: b6aad7e7540360e4db77a6bce31108f9, type: 3}
+  - {fileID: 21300000, guid: 6448967bd7f23114db2c8baabf832331, type: 3}
+  - {fileID: 21300000, guid: 9b0e647d0c42b4c4993ab60b66568ac7, type: 3}
+  - {fileID: 21300000, guid: 3436eec5d844d3c40b1f6c6e363489d1, type: 3}
+  - {fileID: 21300000, guid: ef2f3e40167b32a488a53d43e0825d82, type: 3}
+  - {fileID: 21300000, guid: 42672ff1d87660741af52a09bb497784, type: 3}
+  - {fileID: 21300000, guid: 1e63a57008a34cf48941053692de9cbb, type: 3}
+  - {fileID: 21300000, guid: 4d29b5254833c0b48997ebea356b752a, type: 3}
+  - {fileID: 21300000, guid: 06edfe659bdd9924fa2990392c822df3, type: 3}
+  - {fileID: 21300000, guid: d5afded44a5cc134cbaef211a7e47f05, type: 3}
+  - {fileID: 21300000, guid: 2379b0775aaf8654d89954db7cd4ac03, type: 3}
+  - {fileID: 21300000, guid: 39d6a96b8d568624bb226390e121a39f, type: 3}
+  - {fileID: 21300000, guid: 9cb85ba4a0981e5439404db90115d35c, type: 3}
+  - {fileID: 21300000, guid: 6b29d22bc6be8174b91d5e662f2506cc, type: 3}
+  - {fileID: 21300000, guid: 9913c199ea7f715409517383d0782e1d, type: 3}
+  - {fileID: 21300000, guid: 43f161c90a522b745970e70e3241c1e1, type: 3}
+  - {fileID: 21300000, guid: 2cd145a7316a34b41aa38de0e3671bc5, type: 3}
+  - {fileID: 21300000, guid: 7724aa2056fdce64291c857ddc1d1de3, type: 3}
+  surprisePrizes:
+  - name: 
+    minAmount: 1
+    maxAmount: 2
+  - name: 
+    minAmount: 1
+    maxAmount: 2
+  - name: 
+    minAmount: 1
+    maxAmount: 2
+  - name: 
+    minAmount: 200
+    maxAmount: 2000
+  - name: 
+    minAmount: 10
+    maxAmount: 100
+  - name: 
+    minAmount: 100
+    maxAmount: 1000
+  - name: 
+    minAmount: 1
+    maxAmount: 2
+  - name: 
+    minAmount: 1
+    maxAmount: 2
+  - name: 
+    minAmount: 1
+    maxAmount: 2
+  - name: 
+    minAmount: 1
+    maxAmount: 2
+  - name: 
+    minAmount: 1
+    maxAmount: 2
+  - name: 
+    minAmount: 1
+    maxAmount: 2
+  - name: 
+    minAmount: 1
+    maxAmount: 2
+  - name: 
+    minAmount: 1
+    maxAmount: 2
+  - name: 
+    minAmount: 1
+    maxAmount: 2
+  - name: 
+    minAmount: 1
+    maxAmount: 2
+  - name: 
+    minAmount: 1
+    maxAmount: 2
+  - name: 
+    minAmount: 1
+    maxAmount: 2
+  - name: 
+    minAmount: 1
+    maxAmount: 2
+  - name: 
+    minAmount: 1
+    maxAmount: 2
+  - name: 
+    minAmount: 1
+    maxAmount: 2
+  - name: 
+    minAmount: 1
+    maxAmount: 2
+  - name: 
+    minAmount: 1
+    maxAmount: 2
+  - name: 
+    minAmount: 1
+    maxAmount: 2
+  - name: 
+    minAmount: 1
+    maxAmount: 2
+  - name: 
+    minAmount: 1
+    maxAmount: 2
+  - name: 
+    minAmount: 1
+    maxAmount: 2
+  - name: 
+    minAmount: 1
+    maxAmount: 2
+  - name: 
+    minAmount: 1
+    maxAmount: 2
+  - name: 
+    minAmount: 1
+    maxAmount: 2
