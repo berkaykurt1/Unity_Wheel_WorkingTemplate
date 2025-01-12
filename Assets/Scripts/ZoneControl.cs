@@ -16,6 +16,7 @@ namespace GameDeveloper_Case.Zone
 
         [SerializeField] private int zoneNumber = 0;
 
+        //adjusting zone ui values
         public void SetZoneSprite(string spriteName)
         {
             zoneNameText.text = type == ZoneEnum.Safe ? "Safe Zone" : "Super Zone";
@@ -50,7 +51,7 @@ namespace GameDeveloper_Case.Zone
         }
 
     
-
+        //allows to advance zone values
         public void ZoneNumberNext()
         {
             switch (type)
@@ -59,8 +60,7 @@ namespace GameDeveloper_Case.Zone
 
                     if (UIManager.Instance.LevelIndex % 5 == 0 )
                     {
-                        print("safe index 5'den büyük" + UIManager.Instance.LevelIndex);
-                        zoneNumberText.text = (UIManager.Instance.LevelIndex + 5).ToString();
+                        zoneNumberText.text = UIManager.Instance.LevelIndex != UIManager.Instance.LevelSetting.LevelCount ? (UIManager.Instance.LevelIndex + 5).ToString() : UIManager.Instance.LevelSetting.LevelCount.ToString();
                         zoneNumber = int.Parse(zoneNumberText.text);
 
                     }
@@ -73,16 +73,9 @@ namespace GameDeveloper_Case.Zone
                 case ZoneEnum.Super:
                     if(UIManager.Instance.LevelIndex % 30 == 0)
                     {
-                        if(UIManager.Instance.LevelIndex == UIManager.Instance.LevelSetting.LevelCount)
-                        {
-                            zoneNumberText.text = UIManager.Instance.LevelIndex.ToString();
-                        }
-                        else
-                        {
-                            zoneNumberText.text = (UIManager.Instance.LevelIndex + 30).ToString();
-                            zoneNumber = int.Parse(zoneNumberText.text);
+                        zoneNumberText.text = UIManager.Instance.LevelIndex != UIManager.Instance.LevelSetting.LevelCount ? (UIManager.Instance.LevelIndex + 30).ToString() : UIManager.Instance.LevelSetting.LevelCount.ToString();
+                        zoneNumber = int.Parse(zoneNumberText.text);
 
-                        }
                     }
 
                 break;
@@ -92,6 +85,7 @@ namespace GameDeveloper_Case.Zone
             ZoneNumberSave();
         }
 
+        //resetting zone ui values
         public void ZoneNumberReset()
         {
             switch (type)
@@ -111,6 +105,7 @@ namespace GameDeveloper_Case.Zone
             ZoneNumberSave();
         }
 
+        //saving zone ui values
         private void ZoneNumberSave()
         {
             switch(type)
@@ -126,6 +121,7 @@ namespace GameDeveloper_Case.Zone
             }
         }
 
+        //loading zone ui values
         private void ZoneNumberLoad()
         {
             switch(type)
@@ -144,6 +140,7 @@ namespace GameDeveloper_Case.Zone
             }
         }
 
+        //zone questions values
         private bool SaveZoneNumberQuery()
         {
             return UIManager.Instance.SaveSystemsScriptableObject.PlayerPrefsSaveSystem.PlayerPrefsQuery("safeZoneNumber") && UIManager.Instance.SaveSystemsScriptableObject.PlayerPrefsSaveSystem.PlayerPrefsQuery("superZoneNumber");

@@ -10,9 +10,6 @@ namespace GameDeveloper_Case
     {
         [SerializeField] private Image indicatorImage;
         public Image IndicatorImage { get { return indicatorImage; } }
-
-       
-
         
 
         private void OnTriggerStay2D(Collider2D other) 

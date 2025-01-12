@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using GameDeveloper_Case.SurprisePrizes;
 using GameDeveloper_Case.Whell;
 using UnityEngine;
 using UnityEngine.UI;
@@ -19,9 +18,10 @@ namespace GameDeveloper_Case.Level
         public List<LevelControl> Levels {get {return levels;}}
 
 
-        private void Awake()
+        private void OnEnable()
         {
             uIManager = UIManager.Instance;
+            uIManager.LevelSetting.LevelManager = this;
             
             int newX = (100 * levelSetting.LevelCount) + (50 * (levelSetting.LevelCount -2));
             levelsContent.sizeDelta = new Vector2(levelsContent.sizeDelta.x + newX,levelsContent.sizeDelta.y);
@@ -44,31 +44,23 @@ namespace GameDeveloper_Case.Level
 
             levels[uIManager.LevelIndex-1].LevelZone(true);
 
-            scrollRect.horizontalNormalizedPosition = levelSetting.ScrollHorizontalValue;
-        }
+            GetScrollRectHorizontal();
 
-        private void Update() 
-        {
-            if(Input.GetKeyDown(KeyCode.P))
-            {
-            }
         }
 
 
+        //method that allows us to move to the next level
         public void NextLevel()
         {
             if(uIManager.LevelIndex < levels.Count)
             {
-                uIManager.SurprisePrizes();
-
+        
                 uIManager.WhellController.GetComponent<WhellController>().WhellChieldObjectsAdjust();
-
-                Vector2 distance = levels[uIManager.LevelIndex].LevelRectTransform.anchoredPosition - levels[uIManager.LevelIndex-1].LevelRectTransform.anchoredPosition;
                 
-                float a =distance.x / 100;
-                scrollRect.horizontalNormalizedPosition += a / 100;
-
-                levelSetting.ScrollHorizontalValue = scrollRect.horizontalNormalizedPosition;
+                Vector2 distance = levels[uIManager.LevelIndex].LevelRectTransform.anchoredPosition - levels[uIManager.LevelIndex -1].LevelRectTransform.anchoredPosition;
+                
+                float value =distance.x / 100;
+                SetScrollRectHorizontal(value);
 
                 for (int i = 0; i < levels.Count; i++)
                 {
@@ -85,14 +77,14 @@ namespace GameDeveloper_Case.Level
 
                 uIManager.SaveSystemsScriptableObject.PlayerPrefsSaveSystem.PlayerPrefsSave("levelIndex",uIManager.LevelIndex);
             }
-            else return;
-            
+
+            uIManager.ControlWhellSpinActive();
 
         }
 
+        //allows us to reset the level
         public void LevelReset()
         {
-            print("resetlendi");
             for (int i = 0; i < levels.Count; i++)
             {
                 if(i != 0)
@@ -104,13 +96,27 @@ namespace GameDeveloper_Case.Level
                     levels[i].LevelZone(true);
                 }
             }
-            uIManager.LevelIndex = 0;
+            uIManager.LevelSetting.ScrollHorizontalValue = 0;
+            uIManager.LevelIndex = 1;
             uIManager.GameOver = true;
             scrollRect.horizontalNormalizedPosition = 0f;
             uIManager.SaveSystemsScriptableObject.PlayerPrefsSaveSystem.PlayerPrefsSave("levelIndex",1);
         }
 
+        //scroll rect allows movement on the x axis
+        public void SetScrollRectHorizontal(float value)
+        {
+            scrollRect.horizontalNormalizedPosition += value / 100;
 
+            levelSetting.ScrollHorizontalValue = scrollRect.horizontalNormalizedPosition;
+        }
+
+
+        //scroll rect pulls the value on the x-axis
+        public void GetScrollRectHorizontal()
+        {
+            scrollRect.horizontalNormalizedPosition = levelSetting.ScrollHorizontalValue;
+        }
         
     }
 

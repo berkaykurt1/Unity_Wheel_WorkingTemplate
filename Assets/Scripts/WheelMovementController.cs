@@ -10,7 +10,7 @@ namespace GameDeveloper_Case.Whell
         [SerializeField] private WheelMovementSettings spinMovementSettings;
         public WheelMovementSettings SpinMovementSettings { get { return spinMovementSettings; } }
 
-
+        //keeps the wheel turning
         public IEnumerator WhellRotation()
         {
             float time = 0f;
@@ -32,7 +32,7 @@ namespace GameDeveloper_Case.Whell
             
             UIManager.Instance.HasWhellStopTurning = true;
 
-            UIManager.Instance.Ui_Spin_Generic_Button.interactable = true;
+            UIManager.Instance.WhellSpinButton.interactable = true;
 
         }
     }

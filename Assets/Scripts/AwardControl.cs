@@ -22,6 +22,7 @@ namespace GameDeveloper_Case.Award
         [SerializeField] private AtlasNameEnum awardAtlasName;
         public AtlasNameEnum AwardAtlasName { get { return awardAtlasName; }  set { awardAtlasName = value;}}
 
+        //defines the ui etc. of the prizes
         public void AwardFeaturesIdentification(string awardIconSpriteName,int _awardCount)
         {
             UIManager.Instance.SetSpriteFromAtlas(awardIcon,awardIconSpriteName);
@@ -29,13 +30,14 @@ namespace GameDeveloper_Case.Award
             awardCount = _awardCount;
         }
 
-
+        //increases the amounts of rewards
         public void AwardCountBoosting(int _awardCount)
         {
             awardCount += _awardCount;
             awardCountText.text = awardCount.ToString();
-        }
+        }  
 
+        //withdrawing the amounts of the prizes
         public int GetAwardCount()
         {
             return awardCount;

@@ -18,723 +18,723 @@ MonoBehaviour:
   - {fileID: 21300000, guid: b9b411aad7bbe8440b40b773573f1676, type: 3}
   - {fileID: 21300000, guid: 7d650011708e76340b8f2cca34efa9c5, type: 3}
   whelllevels:
-  - levelName: Level_1
+  - levelName: level_1
     spritesName:
-    - m67
+    - gold
+    - glasses
     - cap
     - cash
     - Knife_Points
+    - m26
     - bronze_nolight
-    - m26
     - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_2
+    spritesName:
     - gold
-    awardsEnums: 1000000002000000030000001b0000000500000006000000070000000b000000
-    awardsAmount: 01000000010000009001000001000000010000000100000001000000c8000000
-  - levelName: Level_2
-    spritesName:
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
+    - mini_shotgun
+    - bronze_nolight
     - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
-    - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    awardsEnums: 0b0000000100000002000000030000001b000000140000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_3
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_4
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_5
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - pumpkin
-    - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000c0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_6
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_7
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_8
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_9
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_10
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - pumpkin
-    - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000c0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_11
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_12
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_13
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_14
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_15
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - pumpkin
-    - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000c0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_16
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_17
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_18
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_19
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_20
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_21
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_22
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_23
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_24
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_25
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - pumpkin
-    - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000c0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_26
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_27
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_28
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_29
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_30
     spritesName:
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
+    - rifle
+    - bronze_nolight
     - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
-    - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    awardsEnums: 0b0000000100000002000000030000001b000000160000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_31
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_32
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_33
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_34
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_35
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - pumpkin
-    - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000c0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_36
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_37
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_38
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_39
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_40
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - pumpkin
-    - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000c0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_41
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_42
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_43
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_44
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_45
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - pumpkin
-    - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000c0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_46
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_47
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_48
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_49
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_50
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - pumpkin
-    - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000c0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_51
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_52
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_53
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_54
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_55
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - pumpkin
-    - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000c0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_56
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_57
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_58
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_59
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
-    - pumpkin
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
-  - levelName: Level_2
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000f0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000
+  - levelName: level_60
     spritesName:
-    - silver_nolight
-    - m67
-    - mle
-    - gold_nolight
-    - Pistol_Points
+    - gold
+    - glasses
+    - cap
+    - cash
+    - Knife_Points
     - pumpkin
-    - m26
-    - regenerator
-    awardsEnums: 070000001000000015000000060000001c0000000c0000000f00000012000000
-    awardsAmount: 
+    - bronze_nolight
+    - silver_nolight
+    awardsEnums: 0b0000000100000002000000030000001b0000000c0000000500000007000000
+    awardsAmount: c800000001000000010000009001000001000000010000000100000001000000

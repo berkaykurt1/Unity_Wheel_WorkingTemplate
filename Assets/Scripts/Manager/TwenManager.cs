@@ -9,24 +9,51 @@ namespace GameDeveloper_Case.Twen
 {
     public class TwenManager : MonoBehaviour
     {
-        #region  Lose Panel
-        [Header("Lose Panel")]
-        [SerializeField] private TextMeshProUGUI losePanelText;
-        [SerializeField] private Image losePanelImage;
-        [SerializeField] private Button losePanelGiveUpButton;
-        [SerializeField] private Button losePanelReviveButton;
-
-        [SerializeField] private float revealDuration = 1f;
-        #endregion
-        
-    
-
-        private void Start() 
+        private static TwenManager instance;
+        public static TwenManager Instance
         {
-            losePanelImage.GetComponent<RectTransform>().DOScale(Vector3.zero,revealDuration).From();
-            losePanelGiveUpButton.GetComponent<RectTransform>().DOAnchorPosY(-200f,revealDuration).From();
-            losePanelReviveButton.GetComponent<RectTransform>().DOAnchorPosY(-200f,revealDuration).From();
+            get
+            {
+                if (instance == null)
+                {
+                    instance = FindObjectOfType<TwenManager>();
+                }
+                return instance;
+            }
         }
+
+        
+        [SerializeField] private float revealDuration = 1f;
+        
+        
+        //allows animation of lose panel objects
+        public void LosePanelDoTween(RectTransform losePanelText,RectTransform losePanelReviveButton,RectTransform losePanelGiveUpButton,RectTransform losePanelCard)
+        {
+            losePanelText.DOAnchorPosY(200,1).From().OnComplete(delegate
+            {
+                losePanelText.GetComponent<TextMeshProUGUI>().DOFade(1,revealDuration).OnComplete(delegate
+                {
+                    losePanelReviveButton.DOAnchorPosY(0, revealDuration);
+                    losePanelGiveUpButton.DOAnchorPosY(0, revealDuration).OnComplete(delegate
+                    {
+                        losePanelCard.DOScale(1,revealDuration);
+                        losePanelCard.DORotate(new Vector3(0,0,-180),revealDuration).SetEase(Ease.InOutCubic).OnComplete(()=>losePanelCard.DORotate(Vector3.zero,revealDuration));
+
+                    });
+                });
+            });
+            
+           
+        }
+
+        //lose panel provides animation of button objects
+        public void LosePanelButtonsDoTwen(RectTransform losePanelButton)
+        {
+            losePanelButton.DOScale(losePanelButton.localScale * 1.25f,revealDuration / 6f).SetLoops(2,LoopType.Yoyo);
+        }
+
+
+        
     }
 
 }

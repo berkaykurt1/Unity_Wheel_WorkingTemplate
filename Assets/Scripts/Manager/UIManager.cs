@@ -8,9 +8,6 @@ using GameDeveloper_Case.Award;
 using GameDeveloper_Case.Zone;
 using GameDeveloper_Case.SaveSystems;
 using GameDeveloper_Case.Level;
-using GameDeveloper_Case.ScriptableObjects;
-using GameDeveloper_Case.SpriteAtlas_SO;
-using GameDeveloper_Case.AtlasNameEnums;
 using GameDeveloper_Case.SurprisePrizes;
 
 namespace GameDeveloper_Case
@@ -41,20 +38,26 @@ namespace GameDeveloper_Case
 
         #endregion
 
+        #region  Atlas
 
+        [Header("Sprite Atlas")]
         [SerializeField] private SpriteAtlas spriteAtlas;
 
+        #endregion
 
         [Space]
         [Space]
 
+        #region  Whell
+        
+        [Header("Whell")]
         [SerializeField] private WheelMovementController whellController;
         public WheelMovementController WhellController { get { return whellController; } }
         
         [SerializeField] private IndicatorControl whellIndicator;
 
-        [SerializeField] private Button ui_spin_generic_button;
-        public Button Ui_Spin_Generic_Button {get { return ui_spin_generic_button;}}
+        [SerializeField] private Button whellSpinButton;
+        public Button WhellSpinButton {get { return whellSpinButton;}}
 
         private bool hasWhellStopTurning = false;
         public bool HasWhellStopTurning { get { return hasWhellStopTurning;} set { hasWhellStopTurning = value;}}
@@ -66,13 +69,14 @@ namespace GameDeveloper_Case
         
 
 
+        #endregion
 
         [Space]
         [Space]
 
         #region  Awards
 
-        [SerializeField] private Transform wonAwardsParent;
+        [SerializeField] private RectTransform wonAwardsParent;
 
         Dictionary<string,AwardControl> wonAwards = new Dictionary<string,AwardControl>();
 
@@ -80,18 +84,42 @@ namespace GameDeveloper_Case
 
         [Space]
         [Space]
+
+        #region  Zone
+
+        [Header("Zone")]
         [SerializeField] private ZoneControl superZone;
         [SerializeField] private ZoneControl safeZone;
-
-        private bool gameOver = false;
-        public bool GameOver { get { return gameOver;} set { gameOver = value; } }
         
+        #endregion
+
+        [Space]
+
+        #region  Panel
+
+        [Header("Panel")]        
         [SerializeField] private GameObject losePanel;
 
+        [SerializeField] private GameObject settingPanel;
+
+        #endregion
+
+        [Space]
+
+        #region  Buttons
+
+        [Header("Buttons")]
         [SerializeField] private Button exitButton;
-    
+
+        #endregion
+
+        [Space]
+        [Space]
+        
         #region  Scriptable Objects
         
+        [Header("Scriptable Objects")]
+
         [SerializeField] private LevelSetting levelSetting;
         public LevelSetting LevelSetting { get { return levelSetting;}}
 
@@ -100,19 +128,18 @@ namespace GameDeveloper_Case
         
         [SerializeField] private WonAwards_ScriptableObject wonAwards_ScriptableObject;
 
-        [SerializeField] private ScriptableObjects_SO scriptableObjects_SO;
-        public ScriptableObjects_SO ScriptableObjects_SO {get {return scriptableObjects_SO;}}   
 
-        [SerializeField] private SpriteAtlas_ScriptableObject spriteAtlas_SO;
-        
         [SerializeField] private SurprisePrizes_ScriptableObject surprisePrizes_ScriptableObject;
 
-        public LevelSetting levelSetting_SO;
+        
+        [Space]
+        [Space]
 
         #endregion
 
         #region  Award Information
 
+        [Header("Award Information")] 
         [SerializeField] private AwardInformationControl supriseAwardInformationControl;
 
         private Sprite wonAwardSprite;
@@ -123,31 +150,30 @@ namespace GameDeveloper_Case
 
         #endregion
 
-        private void OnValidate() 
+        [Space]
+
+        #region  Other Variable
+
+        [Header("Other Variable")]
+        private bool gameOver = false;
+        public bool GameOver { get { return gameOver;} set { gameOver = value; } }
+        
+        #endregion
+
+        private void OnEnable() 
         {
-            ui_spin_generic_button = GameObject.FindWithTag("ui_spin_generic_button").GetComponent<Button>();
-
             
-
-            ui_spin_generic_button.onClick.AddListener(delegate{
+            whellSpinButton.onClick.AddListener(delegate{
                 gameOver = false;
                 StartCoroutine(whellController.WhellRotation());
-                ui_spin_generic_button.interactable = false;
+                whellSpinButton.interactable = false;
                 hasWhellStopTurning = false;
             });
-
             exitButton.onClick.AddListener(ExitButton);
-
         }
 
         private void Awake() 
         {
-            safeZone.SetZoneSprite("zone_current");
-            superZone.SetZoneSprite("zone_super");
-
-
-            CreateWonAward();
-
             if(saveSystemsScriptableObject.PlayerPrefsSaveSystem.PlayerPrefsQuery("levelIndex"))
             {
                 if(wonAwards_ScriptableObject.AwardsCount.Count != 0)
@@ -156,58 +182,65 @@ namespace GameDeveloper_Case
                 }
             }
 
+            ControlWhellSpinActive();
+
+            safeZone.SetZoneSprite("zone_current");
+            superZone.SetZoneSprite("zone_super");
+
+            int newY = levelSetting.LevelCount*110;
+            wonAwardsParent.sizeDelta = new Vector2(300,newY);
+            wonAwardsParent.anchoredPosition = new Vector2(150,-newY / 2);
+
+            CreateWonAward();
+
+            
+
             ChangeLevelWhellSprite();
 
             levelNext += safeZone.ZoneNumberNext;
             levelNext += superZone.ZoneNumberNext;
 
-            print("level index : " + levelIndex);
+            
         }
 
-        private void Update() 
+        private void Start() 
         {
-            if(Input.GetKeyDown(KeyCode.W))
+            if(levelIndex == 1)
             {
-                //TakeScreenshot(20,9);
-                
-                print("level index : " + levelIndex);
-                levelIndex = 29;
-                NextLevel();
-
+                GameReset();
             }
-
-            
-            
-
+    
         }
 
-
-        void TakeScreenshot(int widthRatio, int heightRatio)
+        
+        
+        //you is a function for setting icon
+        public void SettingButton()
         {
-            int targetWidth = Screen.currentResolution.width;
-            int targetHeight;
-
-                    targetHeight = Mathf.RoundToInt(targetWidth / 20f * 9f);  // 20:9 oranı
-
-            Screen.SetResolution(targetWidth, targetHeight, true);  // Fullscreen
+            settingPanel.SetActive(!settingPanel.activeSelf);
         }
 
+
+        
+        //This function setting sprite of a object
         public void SetSpriteFromAtlas(Image image,string spriteName)
         {
             image.sprite = spriteAtlas.GetSprite(spriteName);
         }
 
-        public void CreateAward(string wonAwardIconSpriteName,int _wonAwardAmount)
+        //This function creates the you earn
+        public void CreateAward(string wonAwardIconSpriteName,int _wonAwardAmount,bool isAward)
         {
+            AwardControl newWonAwardGameObject;
             if(!WonAwardsQuery(wonAwardIconSpriteName))
             {
-                AwardControl newWonAwardGameObject =Instantiate(wonAwards_ScriptableObject.AwardPrefab,wonAwardsParent);
+                newWonAwardGameObject =Instantiate(wonAwards_ScriptableObject.AwardPrefab,wonAwardsParent);
                 
                 newWonAwardGameObject.name  = wonAwardIconSpriteName;
                 
                 newWonAwardGameObject.transform.localScale = Vector3.one;
                 newWonAwardGameObject.transform.localPosition = Vector3.zero;
-
+                
                 newWonAwardGameObject.AwardFeaturesIdentification(wonAwardIconSpriteName,_wonAwardAmount);
                 
                 
@@ -232,16 +265,19 @@ namespace GameDeveloper_Case
                 }
             }
 
-            wonAwardSprite = spriteAtlas.GetSprite(wonAwardIconSpriteName);
-            wonAwardAmount = _wonAwardAmount;
-
-
+            if(isAward)
+            {
+                wonAwardSprite = spriteAtlas.GetSprite(wonAwardIconSpriteName);
+                wonAwardAmount = _wonAwardAmount;
+            }
+            
             if(levelIndex != 30)
             {
                 AwardInformation(false);
             }
         }
 
+        //This function creates the rewards you earn
         public void CreateWonAward()
         {
             for (int i = 0; i < wonAwards_ScriptableObject.Awards.Count; i++)
@@ -259,6 +295,7 @@ namespace GameDeveloper_Case
             }
         }
 
+        //used to ask about the prizes you have won
         public bool WonAwardsQuery(string wonAwardIconSpriteName)
         {
             for (int i = 0; i < wonAwards_ScriptableObject.Awards.Count; i++)
@@ -279,7 +316,7 @@ namespace GameDeveloper_Case
             }
         }
 
-
+        //allows to change the sprites of the wheel according to the level
         public void ChangeLevelWhellSprite()
         {
             string whellSpriteName = levelIndex % 30 == 0 ? "golden_whell" : levelIndex % 5 == 0 ? "bronze_whell" : "silver_whell";
@@ -304,10 +341,13 @@ namespace GameDeveloper_Case
             whellController.GetComponent<Image>().sprite =whellController.GetComponent<WhellController>().WhellData.WhellPieceSprites[whellSpriteIndex];
         }
 
+        //method that allows us to move to the next level
         public void NextLevel()
         {
+            SurprisePrizes();
             levelNext();
             ChangeLevelWhellSprite();
+            whellController.GetComponent<WhellController>().WhellChieldObjectsAdjust();
         }
 
         
@@ -317,30 +357,43 @@ namespace GameDeveloper_Case
             losePanel.SetActive(true);
         }
 
+        //method that allows us to continue to the next level
         public void GameContuine()
         {
-            levelNext();
+            levelSetting.LevelManager.GetScrollRectHorizontal();
             LosePanelPasif();
         }
 
+        //allows us to reset the game except for gold
         public void GameReset()
         {
             safeZone.ZoneNumberReset();
             superZone.ZoneNumberReset();
             levelReset();
             LosePanelPasif();
+            wonAwards_ScriptableObject.Awards.Clear();
+            wonAwards_ScriptableObject.AwardsCount.Clear();
+            
+            for (int i = 0; i < wonAwardsParent.childCount; i++)
+            {
+                Destroy(wonAwardsParent.GetChild(i).gameObject);
+            }
+            wonAwards.Clear();
         }
+
+       
+
         public void LosePanelPasif()
         {
             losePanel.SetActive(false);
         }
 
 
+        //allows us to create surprise prizes
         public void SurprisePrizes()
         {
             if(levelIndex % 30 == 0)
             {
-                AwardInformation(true);
                 int randomNumber = Random.Range(0, surprisePrizes_ScriptableObject.SurprisePrizesSprites.Length);
 
                 int supriseAwardAmount = 0;
@@ -350,7 +403,8 @@ namespace GameDeveloper_Case
                 wonSupriseAwardSprite = surprisePrizes_ScriptableObject.SurprisePrizesSprites[randomNumber];
                 wonSupriseAwardAmount  =supriseAwardAmount;
 
-                CreateAward(surprisePrizes_ScriptableObject.SurprisePrizesSprites[randomNumber].name, supriseAwardAmount);
+                CreateAward(surprisePrizes_ScriptableObject.SurprisePrizesSprites[randomNumber].name, supriseAwardAmount,false);
+                AwardInformation(true);
             }
 
         }
@@ -361,10 +415,21 @@ namespace GameDeveloper_Case
             Application.Quit();
         }
 
+        //hangi ödülleri kazandığımızı ui olarak gösteren method
         private void AwardInformation(bool value)
         {
             supriseAwardInformationControl.AwardInformation(wonAwardSprite,wonAwardAmount,wonSupriseAwardSprite,wonSupriseAwardAmount,value);
+            
         }
+
+        public void ControlWhellSpinActive()
+        {
+            if(levelIndex == levelSetting.LevelCount)
+            {
+                whellSpinButton.interactable = false;
+            }
+        }
+
     }
 }
 

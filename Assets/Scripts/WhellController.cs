@@ -21,6 +21,7 @@ namespace GameDeveloper_Case.Whell
             WhellChieldObjectsAdjust();
         }
 
+        //adjusts the rewards on the wheel
         public void WhellChieldObjectsAdjust()
         {
             whellPieces = new WheelPieceController[whell.transform.childCount];
@@ -28,11 +29,11 @@ namespace GameDeveloper_Case.Whell
             {
                 whellPieces[i] = whell.transform.GetChild(i).GetComponent<WheelPieceController>();
             }    
-            for (int i = 0; i < whellData.Whelllevels[UIManager.Instance.LevelIndex-1].spritesName.Length; i++)
+            for (int i = 0; i < whellData.Whelllevels[0].spritesName.Length; i++)
             {
                 UIManager.Instance.SetSpriteFromAtlas(whellPieces[i].WhellPieceImage,whellData.Whelllevels[UIManager.Instance.LevelIndex-1].spritesName[i]);
                 whellPieces[i].AwardsType = whellData.Whelllevels[UIManager.Instance.LevelIndex-1].awardsEnums[i];
-                whellPieces[i].SetWhellPieceAmount(whellData.Whelllevels[0].awardsAmount[i]);
+                whellPieces[i].SetWhellPieceAmount(whellData.Whelllevels[UIManager.Instance.LevelIndex-1].awardsAmount[i]);
             }
         }
 
