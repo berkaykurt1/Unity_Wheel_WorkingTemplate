@@ -99,6 +99,7 @@ namespace GameDeveloper_Case
 
         [Header("Panel")]        
         [SerializeField] private GameObject losePanel;
+        public GameObject LosePanel { get { return losePanel;}}
 
         [SerializeField] private GameObject settingPanel;
 

@@ -17,10 +17,8 @@ namespace GameDeveloper_Case.LosePanel
         [SerializeField] private Button reviveButton;
         private void OnEnable() 
         {
-            giveUpButton = GameObject.FindWithTag("loseGiveUpButton").GetComponent<Button>();
             giveUpButton.onClick.AddListener(GiveUpButtonFunction);
 
-            reviveButton = GameObject.FindWithTag("loseReviveButton").GetComponent<Button>();
             reviveButton.onClick.AddListener(ReviveButtonFunction);
             
             if(EconomyManager.Instance.CurrentGold == 0)

@@ -4,6 +4,7 @@ using UnityEngine;
 using DG.Tweening;
 using TMPro;
 using UnityEngine.UI;
+using GameDeveloper_Case.LosePanel;
 
 namespace GameDeveloper_Case.Twen
 {
@@ -45,13 +46,6 @@ namespace GameDeveloper_Case.Twen
             
            
         }
-
-        //lose panel provides animation of button objects
-        public void LosePanelButtonsDoTwen(RectTransform losePanelButton)
-        {
-            losePanelButton.DOScale(losePanelButton.localScale * 1.25f,revealDuration / 6f).SetLoops(2,LoopType.Yoyo);
-        }
-
 
         
     }
